@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/SlothNinja/log"
-	"github.com/SlothNinja/slothninja-games/sn/user"
+	"github.com/SlothNinja/user"
 	"github.com/gin-gonic/gin"
 	"google.golang.org/appengine"
 )

@@ -91,6 +91,9 @@ github.com/SlothNinja/slothninja-games/sn/user/stats v0.0.0-20200217151912-ca657
 github.com/SlothNinja/slothninja-games/sn/user_controller v0.0.0-20200217151912-ca6570104a61/go.mod h1:8fsvNyHBaJtYd5mt0j3BtX7ZE4wRsFeMiAbfbxmTnmI=
 github.com/SlothNinja/slothninja-games/welcome v0.0.0-20200212041948-737992f80b4d/go.mod h1:kaTAl8n9TtU33W+6rLFQmKBUMRUqy1M1PJ4uj8h3oHQ=
 github.com/SlothNinja/slothninja-games/welcome v0.0.0-20200217151912-ca6570104a61/go.mod h1:27u9VD56UPZ/t4IvJWqWELpwa1p2oPF+Qr432kbjKEM=
+github.com/SlothNinja/user v0.0.0-20200228032006-009233957227 h1:q4otLlbE3XaItsQltfiVlHYEJJXHlOfU4yUeQIDYAs4=
+github.com/SlothNinja/user v0.0.0-20200228032006-009233957227/go.mod h1:uyxsf3ntyYMSdNUiD+iMfLZG67+mQ98aigViWxmBjrA=
+github.com/SlothNinja/user v0.0.12 h1:dFPow96gHdXA3aCWxfX7CAgMbNjphhfwx4NZ2QsXCPc=
 github.com/SlothNinja/user v0.0.12/go.mod h1:f3+9ggkhgCb6jOqbN3cOcBFpqKcUFjDx8wXWUm3c0lY=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
 github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf/go.mod h1:ybxpYRFXyAe+OPACYpWeL0wqObRcbAqCMya13uyzqw0=
