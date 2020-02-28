@@ -1,2 +1,1 @@
-# sng-welcome
 # welcome
