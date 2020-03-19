@@ -4,28 +4,19 @@ import (
 	"net/http"
 
 	"github.com/SlothNinja/log"
+	"github.com/SlothNinja/sn"
 	"github.com/SlothNinja/user"
 	"github.com/gin-gonic/gin"
-	"google.golang.org/appengine"
 )
 
 func Index(c *gin.Context) {
-	log.Debugf("Entering welcome#Index")
-	defer log.Debugf("Exiting welcome#Index")
+	log.Debugf("Entering")
+	defer log.Debugf("Exiting")
 
 	cu := user.CurrentFrom(c)
 	log.Debugf("cu: %#v", cu)
 	c.HTML(http.StatusOK, "welcome/index", gin.H{
-		"VersionID": appengine.VersionID(c),
+		"VersionID": sn.VersionID(),
 		"CUser":     cu,
 		"Context":   c})
-	// if cu, gu := user.CurrentFrom(c), user.GUserFrom(c); cu == nil && gu != nil {
-	// 	c.Redirect(http.StatusSeeOther, "/user/new")
-	// } else {
-	// 	log.Debugf("cu: %#v", cu)
-	// 	c.HTML(http.StatusOK, "welcome/index", gin.H{
-	// 		"VersionID": appengine.VersionID(c),
-	// 		"CUser":     cu,
-	// 		"Context":   c})
-	// }
 }
