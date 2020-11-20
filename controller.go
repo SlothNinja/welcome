@@ -13,8 +13,10 @@ func Index(c *gin.Context) {
 	log.Debugf("Entering")
 	defer log.Debugf("Exiting")
 
-	cu := user.CurrentFrom(c)
-	log.Debugf("cu: %#v", cu)
+	cu, err := user.CurrentFrom(c)
+	if err != nil {
+		log.Debugf(err.Error())
+	}
 	c.HTML(http.StatusOK, "welcome/index", gin.H{
 		"VersionID": sn.VersionID(),
 		"CUser":     cu,
