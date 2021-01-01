@@ -5,15 +5,14 @@ import (
 
 	"github.com/SlothNinja/log"
 	"github.com/SlothNinja/sn"
-	"github.com/SlothNinja/user"
 	"github.com/gin-gonic/gin"
 )
 
-func Index(c *gin.Context) {
+func (client Client) Index(c *gin.Context) {
 	log.Debugf("Entering")
 	defer log.Debugf("Exiting")
 
-	cu, err := user.CurrentFrom(c)
+	cu, err := client.User.Current(c)
 	if err != nil {
 		log.Debugf(err.Error())
 	}
